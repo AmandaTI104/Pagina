@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+nav ul, nav li{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 15px;
+    color: #727272;
+    display: block;
+}
+nav .active, nav a:hover{
+    background-color: #ff7b00;
+    color:white;
+}
+
+#banner{
+    background-image: url('https://cartermatt.com/wp-content/uploads/2022/07/Westworld-1.webp');
+    height: 670px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.banner_headline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.banner_headline h1{
+    color:#FFFF;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px 0px #5555;
+    max-width: 350px;
+}
+
+.banner_headline h2{
+    color:#FFF;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px 0px #5555;
+    margin-top:30px;
+}
+
+.banner_options{
+    height: 210px;
+    display: flex;
+}
+
+.banner1,.banner2,.banner3,.banner4{
+    flex:1;
+    color:#FFFF;
+    padding: 20px;
+}
+
+.banner1{
+    background-color: #bdbdbd;
+}
+
+.banner2{
+    background-color: #8a8a8a;
+}
+
+.banner3{
+    background-color: #555555fa;
+}
+
+.banner4{
+    background-color: #000000;
+}
+
+.banner_title{
+    font-size:21px;
+}
+
+.banner_desc{
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner_options a{
+    border: 1px solid #FFF;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 12px;
+    padding: 5px;
+}
+
+#geral{
+    display: flex;
+    justify-content: center;
+}
+
+.widget_title{
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+.widget_title_text{
+    font-size:21px;
+    font-weight: bold;
+}
+
+.widget_title_bar{
+    width: 50px;
+    height: 5px;
+    background-color: #ff7b00;
+    margin-top:10px;
+}
+
+#rodape{
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    color: #5c5c5c;
+    height: 30px;
+    font-size:15px;
+    padding: 40px;
+}
+
+@media (max-width: 800px){
+    .banner_headline h1{
+        font-size: 55px;
+        padding: 20px;
+    }
+
+    .banner_headline h2{
+        font-size: 17px;
+        padding: 20px;
+    }
+
+    .banner_options{
+        flex-direction: column;
+    }
+
+    #geral{
+        margin-top: 200px;
+    }
+
+    #rodape{
+        flex-direction: column;
+        padding:20px;
+    }
+
+}
